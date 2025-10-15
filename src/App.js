@@ -452,7 +452,7 @@ const parseSmartFormat = (data) => {
   if (!settings.apiKey) return null;
   
   try {
-    const response = await fetch('https://concorsi-backend.onrender.com', {
+    const response = await fetch('https://concorsi-backend.onrender.com/api/ai', {
       method: 'POST',
       headers: {'Content-Type': 'application/json'},
     body: JSON.stringify({
