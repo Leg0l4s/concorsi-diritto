@@ -4,7 +4,7 @@ const cors = require('cors');
 const app = express();
 
 app.use(cors({
-  origin: 'http://localhost:3000',
+  origin: ['http://localhost:3000', 'https://lighthearted-daifuku-1601b9.netlify.app'],
   credentials: true
 }));
 app.use(express.json());
